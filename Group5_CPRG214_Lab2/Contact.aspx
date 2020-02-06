@@ -4,8 +4,10 @@
     <h2><%: Title %>.</h2>
     <h3>Your contact page.</h3>
     <address>
-        One Microsoft Way<br />
-        Redmond, WA 98052-6399<br />
+        Inland Lake Marina<br />
+        Box 123<br />
+        Inland Lake, Arizona<br />
+        86038<br />
         <abbr title="Phone">P:</abbr>
         425.555.0100
     </address>

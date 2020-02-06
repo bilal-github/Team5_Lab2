@@ -205,3 +205,6 @@ C:\Users\733309\Desktop\CPRG214\Team5_Lab2\Group5_CPRG214_Lab2\obj\Debug\Group5_
 C:\Users\733309\Desktop\CPRG214\Team5_Lab2\Group5_CPRG214_Lab2\bin\SlipsData.dll
 C:\Users\733309\Desktop\CPRG214\Team5_Lab2\Group5_CPRG214_Lab2\bin\SlipsData.pdb
 C:\Users\733309\Desktop\CPRG214\Team5_Lab2\Group5_CPRG214_Lab2\bin\SlipsData.dll.config
+C:\Users\834650\source\repos\Group5_CPRG214_Lab2\Group5_CPRG214_Lab2\bin\SlipsData.dll
+C:\Users\834650\source\repos\Group5_CPRG214_Lab2\Group5_CPRG214_Lab2\bin\SlipsData.pdb
+C:\Users\834650\source\repos\Group5_CPRG214_Lab2\Group5_CPRG214_Lab2\bin\SlipsData.dll.config
