@@ -14,6 +14,7 @@ namespace SlipsData
     {
         public static void AddCustomer(string FirstName, string LastName, string Phone, string City,string UserName)
         {
+            
             Customer customer;
             using (SqlConnection connection = MarinaDB.GetConnection())
             {

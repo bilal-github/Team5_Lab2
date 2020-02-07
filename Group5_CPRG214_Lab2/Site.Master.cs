@@ -76,6 +76,7 @@ namespace Group5_CPRG214_Lab2
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
         {
             Context.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
+            Response.Redirect("Default.aspx");
             Session["UserName"] = null;
         }
     }
