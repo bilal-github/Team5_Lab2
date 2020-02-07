@@ -70,6 +70,8 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Customer.cs" />
+    <Compile Include="CustomerDB.cs" />
     <Compile Include="Dock.cs" />
     <Compile Include="DockDB.cs" />
     <Compile Include="MarinaDB.cs" />
