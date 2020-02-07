@@ -15,6 +15,7 @@ namespace Group5_CPRG214_Lab2
         private const string AntiXsrfTokenKey = "__AntiXsrfToken";
         private const string AntiXsrfUserNameKey = "__AntiXsrfUserName";
         private string _antiXsrfTokenValue;
+        
 
         protected void Page_Init(object sender, EventArgs e)
         {
@@ -75,6 +76,7 @@ namespace Group5_CPRG214_Lab2
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
         {
             Context.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
+            Session["FirstName"] = null;
         }
     }
 

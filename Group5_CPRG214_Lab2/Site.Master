@@ -11,7 +11,7 @@
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
@@ -39,31 +39,33 @@
 
         <div class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top">
             <div class="container">
-                 <a class="navbar-brand" runat="server" href="~/">Application name</a>
+                <a class="navbar-brand" runat="server" href="~/">Application name</a>
                 <%--<div class="navbar-header">--%>
-                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapseNav"aria-controls="collapseNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                   
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapseNav" aria-controls="collapseNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
                 <%--</div>--%>
-                <div class="collapse navbar-collapse" id ="collapseNav">
+                <div class="collapse navbar-collapse" id="collapseNav">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item"><a class="nav-link active" runat="server" href="~/">Home</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/AvailableSlips">Available Slips</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/LeaseSlip">Slip</a></li>
 
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                                <li class="nav-item"><a  class="nav-link" runat="server" href="~/Account/Register">Register</a></li>
-                                <li class="nav-item"><a  class="nav-link" runat="server" href="~/Account/Login">Log in</a></li>
+                                <li class="nav-item"><a class="nav-link" runat="server" href="~/Account/Register">Register</a></li>
+                                <li class="nav-item"><a class="nav-link" runat="server" href="~/Account/Login">Log in</a></li>
                             </ul>
                         </AnonymousTemplate>
                         <LoggedInTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                                <li class="nav-item"><a  class="nav-link" runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %></a></li>
+                                <li class="nav-item" id="slipID"><a class="nav-link" runat="server" href="~/LeaseSlip">Slip</a></li>
+                                <%--<li class="nav-item"><a class="nav-link" runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %></a></li>--%>
+                                <li class="nav-item"><a class="nav-link" runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Session["FirstName"]  %></a></li>
+
                                 <li class="nav-item">
                                     <asp:LoginStatus class="nav-link" runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
                                 </li>
