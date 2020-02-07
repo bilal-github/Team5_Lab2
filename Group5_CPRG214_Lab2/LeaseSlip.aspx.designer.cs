@@ -15,6 +15,24 @@ namespace Group5_CPRG214_Lab2
     {
 
         /// <summary>
+        /// gvCustSlips control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvCustSlips;
+
+        /// <summary>
+        /// CustSlipsDataSource control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ObjectDataSource CustSlipsDataSource;
+
+        /// <summary>
         /// ddlDocks control.
         /// </summary>
         /// <remarks>
@@ -40,5 +58,14 @@ namespace Group5_CPRG214_Lab2
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView gvLeaseSlips;
+
+        /// <summary>
+        /// SlipsDataSource control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ObjectDataSource SlipsDataSource;
     }
 }

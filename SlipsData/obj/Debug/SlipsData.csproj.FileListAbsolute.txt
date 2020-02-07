@@ -110,7 +110,6 @@ C:\Users\834650\source\repos\Group5_CPRG214_Lab2\SlipsData\bin\roslyn\VBCSCompil
 C:\Users\834650\source\repos\Group5_CPRG214_Lab2\SlipsData\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\834650\source\repos\Group5_CPRG214_Lab2\SlipsData\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\834650\source\repos\Group5_CPRG214_Lab2\SlipsData\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\834650\source\repos\Group5_CPRG214_Lab2\SlipsData\obj\Debug\SlipsData.csprojAssemblyReference.cache
 C:\Users\834650\source\repos\Group5_CPRG214_Lab2\SlipsData\obj\Debug\SlipsData.csproj.CopyComplete
 C:\Users\834650\source\repos\Group5_CPRG214_Lab2\SlipsData\obj\Debug\SlipsData.dll
 C:\Users\834650\source\repos\Group5_CPRG214_Lab2\SlipsData\obj\Debug\SlipsData.pdb

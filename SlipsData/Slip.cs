@@ -8,6 +8,7 @@ namespace SlipsData
     public class Slip
     {
         public Slip() { }
+        public int LeaseID { get; set; }
 
         public int ID { get; set; }
 
