@@ -48,5 +48,42 @@ namespace SlipsData
 
             return slips;
         }
+
+        
+        //retrieve available slips
+        [DataObjectMethod(DataObjectMethodType.Select)]
+        public static List<Slip> GetAvailableSlips(int DockID)
+        {
+            List<Slip> availableSlips = new List<Slip>();
+            Slip slip;
+
+            using (SqlConnection connection = MarinaDB.GetConnection())
+            {
+                string selectQuery = "select S.ID,S.Width,S.Length, S.DockID from Slip S " +
+                                    "Left join Lease L on L.SlipID = S.ID " +
+                                    "Where L.ID is NULL and S.DockID = @DockID " +
+                                    "order by 1";
+                using (SqlCommand command = new SqlCommand(selectQuery, connection))
+                {
+
+                    connection.Open();
+
+                    command.Parameters.AddWithValue("DockID", DockID);
+
+                    SqlDataReader reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        slip = new Slip();
+                        slip.ID = (int)reader["ID"];
+                        slip.Width = (int)reader["Width"];
+                        slip.Length = (int)reader["Length"];
+                        slip.DockID = (int)reader["DockID"];
+                        availableSlips.Add(slip);
+                    }
+                    reader.Close();
+                }
+            }
+            return availableSlips;
+        }
     }
 }

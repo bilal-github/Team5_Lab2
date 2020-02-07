@@ -15,13 +15,13 @@ namespace Group5_CPRG214_Lab2
     {
 
         /// <summary>
-        /// ddlDocks control.
+        /// ddlAvailableSlipsDockID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlDocks;
+        protected global::System.Web.UI.WebControls.DropDownList ddlAvailableSlipsDockID;
 
         /// <summary>
         /// ObjectDataSource1 control.
@@ -31,5 +31,23 @@ namespace Group5_CPRG214_Lab2
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ObjectDataSource ObjectDataSource1;
+
+        /// <summary>
+        /// dgvAvailableSlips control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView dgvAvailableSlips;
+
+        /// <summary>
+        /// ObjectDataSource2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ObjectDataSource ObjectDataSource2;
     }
 }
