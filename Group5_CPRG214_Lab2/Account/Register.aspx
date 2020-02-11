@@ -1,6 +1,13 @@
 ﻿<%@ Page Title="Register" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="Group5_CPRG214_Lab2.Account.Register" %>
-
+<%--/*
+ * Bilal Ahmad
+ * Lab 2
+ * Feb 9/2020
+ * 
+ */--%>
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
+    <br />
+    <br />
     <h2><%: Title %>.</h2>
     <p class="text-danger">
         <asp:Literal runat="server" ID="ErrorMessage" />
@@ -73,7 +80,7 @@
         </div>
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <asp:Button runat="server" OnClick="CreateUser_Click" Text="Register" CssClass="btn btn-default" />
+                <asp:Button runat="server" OnClick="CreateUser_Click" Text="Register" CssClass="btn btn-primary" />
             </div>
         </div>
     </div>

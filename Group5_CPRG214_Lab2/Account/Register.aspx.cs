@@ -24,8 +24,6 @@ namespace Group5_CPRG214_Lab2.Account
                 try
                 {
                     CustomerDB.AddCustomer(FName.Text, LName.Text, Phone.Text, City.Text, Email.Text);
-
-
                 }
                 catch (Exception ex)
                 {

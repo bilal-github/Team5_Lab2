@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * Bilal Ahmad
+ * Lab 2
+ * Feb 9/2020
+ * 
+ */
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data.SqlClient;

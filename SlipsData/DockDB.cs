@@ -5,7 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
-
+// coded by ivan
 namespace SlipsData
 {
     [DataObject(true)]
